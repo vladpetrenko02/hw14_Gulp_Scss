@@ -1,0 +1,10 @@
+@mixin text_style($family, $style, $weight, $size, $space, $clor, $align) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    letter-spacing: $space;
+    color: $clor;
+    text-align: $align;
+    transition: all .3s linear;
+}

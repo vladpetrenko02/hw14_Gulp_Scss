@@ -1,0 +1,113 @@
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.container {
+    max-width: 1550px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin: -10px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: calc(100%/3);
+        padding: 10px 10px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            background: #F9F8F8;
+            border-radius: 30px;
+            padding: 35px 30px;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover{
+                box-shadow: 0 0 10px black;
+            }
+
+            a {
+                text-decoration: none;
+                padding: 10px 0;
+                max-width: 120px;
+                @include text_style(
+                    'Open Sans', 
+                    bold, 
+                    700, 
+                    15px, 
+                    0.36px, 
+                    white,
+                    center
+                );
+                background: #274C5B;
+                border-radius: 8px;
+
+                &:hover {
+                    background: white;
+                    color: #274C5B;
+                }
+                
+            }
+
+            >div:first-of-type {
+                padding: 20px 0 10px;
+                border-bottom: 1px solid #D4D4D4;
+                @include text_style(
+                    'Roboto', 
+                    normal, 
+                    400, 
+                    22px, 
+                    0.36px, 
+                    #274C5B,
+                    none
+                );
+            }
+
+            >div:nth-of-type(2) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+
+                div span:first-child {
+                    @include text_style(
+                        'Open Sans',
+                        normal,
+                        400,
+                        17px,
+                        0.36px,
+                        #B8B8B8,
+                        none
+                    );
+                    text-decoration: line-through;
+                    margin-right: 10px;
+                }
+
+                div span:last-child {
+                    @include text_style(
+                        'Open Sans',
+                        normal,
+                        700,
+                        18px,
+                        0.36px,
+                        #274C5B,
+                        none
+                    );
+                }
+            }
+        }
+    }
+}
+
+
+
+

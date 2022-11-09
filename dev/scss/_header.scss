@@ -1,0 +1,21 @@
+#header {
+    padding: 50px 0;
+
+    h4 {
+        @include text_style('Yellowtail', normal, 400, 36px, 0.36px, $color-title, center);
+
+        &:hover {
+            color: $color-title-hover;
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        @include text_style('Roboto', normal, 700, 45px, 0.36px, $color-subtitle, center);
+
+        &:hover {
+            color: $color-subtitle-hover;
+            cursor: pointer;
+        }
+    }
+}
